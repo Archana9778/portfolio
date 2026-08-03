@@ -6,84 +6,83 @@
 <title>Archana | Cloud & DevOps Portfolio</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#f4f6f9;
-    color:#333;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:#f4f7fb;color:#333;}
 header{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
+background:linear-gradient(135deg,#2563eb,#06b6d4);
+color:white;
+text-align:center;
+padding:80px 20px;
 }
-
-header h1{
-    font-size:40px;
+header h1{font-size:48px;}
+header p{font-size:20px;margin:15px 0;}
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#fff;
+color:#2563eb;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+margin-top:15px;
 }
-
-header p{
-    margin-top:10px;
-    font-size:18px;
-}
-
 nav{
-    background:#084298;
-    text-align:center;
-    padding:15px;
+position:sticky;
+top:0;
+background:#0f172a;
+padding:15px;
+text-align:center;
 }
-
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
 }
-
 section{
-    max-width:900px;
-    margin:30px auto;
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+max-width:1000px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
-
 h2{
-    color:#0d6efd;
-    margin-bottom:15px;
+color:#2563eb;
+margin-bottom:20px;
 }
-
 .skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
 }
-
-.skill{
-    background:#0d6efd;
-    color:white;
-    padding:10px 15px;
-    border-radius:20px;
+.skills span{
+background:#2563eb;
+color:white;
+padding:10px 18px;
+border-radius:20px;
 }
-
-.project{
-    margin-bottom:20px;
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
-
+.card{
+background:#eef5ff;
+padding:20px;
+border-radius:10px;
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-5px);
+}
 footer{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
 }
 </style>
 
@@ -93,6 +92,7 @@ footer{
 <header>
 <h1>Archana</h1>
 <p>Cloud & DevOps Learner</p>
+<a href="#contact" class="btn">Contact Me</a>
 </header>
 
 <nav>
@@ -105,60 +105,61 @@ footer{
 <section id="about">
 <h2>About Me</h2>
 <p>
-Hello! I'm Archana, a Cloud & DevOps learner passionate about Linux, Git, GitHub,
-Docker, AWS, and automation. I enjoy building and managing servers, hosting
-websites, and learning modern DevOps practices.
+Hello! I'm <b>Archana</b>, a passionate Cloud & DevOps learner.
+I enjoy working with Linux, Azure, Git, GitHub, Docker, Nginx and Bash scripting.
+I'm continuously improving my skills by building real-world DevOps projects.
 </p>
 </section>
 
 <section id="skills">
 <h2>Skills</h2>
-
 <div class="skills">
-<div class="skill">Linux</div>
-<div class="skill">Git</div>
-<div class="skill">GitHub</div>
-<div class="skill">Nginx</div>
-<div class="skill">Docker</div>
-<div class="skill">AWS</div>
-<div class="skill">Bash Scripting</div>
-<div class="skill">HTML & CSS</div>
+<span>Linux</span>
+<span>Azure</span>
+<span>Git</span>
+<span>GitHub</span>
+<span>Docker</span>
+<span>Nginx</span>
+<span>Bash</span>
+<span>HTML</span>
+<span>CSS</span>
 </div>
-
 </section>
 
 <section id="projects">
 <h2>Projects</h2>
 
-<div class="project">
-<h3>Web Hosting with Nginx</h3>
-<p>Hosted multiple websites using the Nginx web server on Ubuntu.</p>
+<div class="projects">
+
+<div class="card">
+<h3>Game Hosting</h3>
+<p>Hosted a web game using Nginx on Ubuntu Linux.</p>
 </div>
 
-<div class="project">
-<h3>Mail Server Setup</h3>
-<p>Configured Postfix and Dovecot to create a local mail server.</p>
+<div class="card">
+<h3>Mail Server</h3>
+<p>Configured Postfix and Dovecot for local email communication.</p>
 </div>
 
-<div class="project">
-<h3>Log Analysis Server</h3>
-<p>Implemented log monitoring using rsyslog, journalctl, and logrotate.</p>
+<div class="card">
+<h3>Log Analysis</h3>
+<p>Centralized logs using rsyslog, journalctl and logrotate.</p>
 </div>
 
-<div class="project">
-<h3>GitHub Portfolio Hosting</h3>
-<p>Created and hosted a responsive portfolio website using GitHub Pages.</p>
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Designed and hosted a responsive portfolio using GitHub Pages.</p>
+</div>
+
 </div>
 
 </section>
 
 <section id="contact">
 <h2>Contact</h2>
-
-<p><strong>Name:</strong> Archana</p>
-<p><strong>Email:</strong> your-email@example.com</p>
-<p><strong>GitHub:</strong> https://github.com/yourusername</p>
-
+<p><b>Name:</b> Archana</p>
+<p><b>Email:</b> your-email@example.com</p>
+<p><b>GitHub:</b> https://github.com/Archana9778</p>
 </section>
 
 <footer>
